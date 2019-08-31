@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./styles/style.css" rel="stylesheet" type="text/css">
   <title>Dreamy Pet Survey</title>
 </head>
 <body>
@@ -16,9 +17,33 @@
     <form>
       <fieldset class="fieldset">
         <legend>Personal Information:</legend>
+        <label for="name" class="label">Name*:</label>
+        <input type="text" class="field" name="name" id="name" required placeholder="Name">
+        <label for="email" class="label">Email*:</label>
+        <input type="email" class="field" name="email" id="email" required placeholder="Email">
+        <label for="Age" class="label">Name*:</label>
+        <input type="number" class="field" name="age" id="age" required placeholder="Age">
       </fieldset>
       <fieldset class="fieldset">
         <legend>Survey Information:</legend>
+        <p class="question">1. What is your dream pet?</p>
+        <select name="dream-pet" id="dream-pet">
+          <option value="">Please select a option</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="horse">Horse</option>
+        </select>
+        <p class="question">2. What color is he/she?</p>
+        <input type="radio" name="color" value="pink"><label>Pink</label>
+        <input type="radio" name="color" value="purple"><label>Purple</label>
+        <input type="radio" name="color" value="colourful"><label>Colourful</label>
+        <input type="radio" name="color" value="change every day"><label>Change every day</label>
+        <label class="question">3. What name(s) would be prefered for you pet?</label>
+        <input type="checkbox" name="petName" value="burrito"><label>Burrito</label>
+        <input type="checkbox" name="petName" value="hairy paw-ter"><label>Hairy paw-ter</label>
+        <input type="checkbox" name="petName" value="buffy"><label>Buffy</label>
+        <input type="checkbox" name="petName" value="pee wee"><label>Pee Wee</label>
       </fieldset>
       <input type="submit" value="submit">
     </form>
