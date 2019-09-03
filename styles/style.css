@@ -43,6 +43,11 @@ body {
   margin-bottom: 4px;
 }
 
+.fieldset .label:last-of-type,
+.fieldset .label:nth-of-type(4) {
+  margin-bottom: 10px;
+}
+
 .field {
   width: 200px;
   height: 25px;
@@ -55,4 +60,19 @@ body {
 .fieldset .question:first-of-type {
   display: inline-block;
   margin-right: 10px;
+}
+
+.radio-button,
+.checkbox {
+  display: inline-block;
+  margin: 0 4px 0 30px;
+}
+
+.comments {
+  width: 100%;
+  color: #333;
+  line-height: 20px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 100px;
 }
